@@ -18,14 +18,14 @@ enum { min_adb_ms = 12 }; // (83Hz) best for everything, and what Macs use
 static void init( void )
 {
 	clock_prescale_set( clock_div_1 );
-	
+
 	// Reduce power usage
 	// Avoid floating inputs on unused pins
 	#ifdef PORTA
 		DDRA  = 0;
 		PORTA = 0xFF;
 	#endif
-	
+
 	DDRB  = 0;
 	PORTB = 0xFF;
 	DDRC  = 0;
@@ -36,7 +36,7 @@ static void init( void )
 	PORTE = 0xFF;
 	DDRF  = 0;
 	PORTF = 0xFF;
-	
+
 	power_all_disable();
 	power_usb_enable();
 	power_timer1_enable();
