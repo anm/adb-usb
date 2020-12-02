@@ -39,8 +39,8 @@
  **************************************************************************/
 
 // You can change these to give your code its own name.
-#define STR_MANUFACTURER	L"MfgName"
-#define STR_PRODUCT		L"Keyboard"
+#define STR_MANUFACTURER	L"River Cat Electronics"
+#define STR_PRODUCT		L"ADB Keyboard Adapter"
 
 
 // Mac OS-X and Linux automatically load the correct drivers.  On
